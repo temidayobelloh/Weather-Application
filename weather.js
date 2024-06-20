@@ -1,7 +1,7 @@
 document.getElementById('weatherBtn').addEventListener('click', function () {
     const UserInput = document.getElementById('cityInput').value;
     const apiKey = '57fce59d263fbb0d4c043a81392345c5';
-    const url =`https://api.openweathermap.org/data/2.5/weather?q=${userInput}&appid=${apiKey}&units=metric`;
+    const url =`https://api.openweathermap.org/data/2.5/weather?q=${UserInput}&appid=${apiKey}&units=imperial`;
 
     fetch(url)
 .then((response)=> {return response.json();})
@@ -17,3 +17,4 @@ document.getElementById('weatherBtn').addEventListener('click', function () {
     document.getElementById('error').classList.add('hidden');
 });
 });
+
