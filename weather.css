@@ -1,0 +1,13 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    border-radius: 10px;
+    margin: auto auto;
+    padding: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+.hidden{
+    display:none;
+}
