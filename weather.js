@@ -1,3 +1,5 @@
+document.getElementById('cityInput').addEventListener('keypress' , function (event) { if (event.key==='Enter') {document.getElementById('weatherBtn').click();}});
+
 document.getElementById('weatherBtn').addEventListener('click', function () {
     const UserInput = document.getElementById('cityInput').value;
     const apiKey = '57fce59d263fbb0d4c043a81392345c5';
@@ -14,7 +16,7 @@ document.getElementById('weatherBtn').addEventListener('click', function () {
 .catch((error) => {
     document.getElementById('error').textContent = error.message;
     document.getElementById('error').classList.remove('hidden');
-    document.getElementById('error').classList.add('hidden');
+    document.getElementById('weatherInfo').classList.add('hidden');
 });
 });
 
